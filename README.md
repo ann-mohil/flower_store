@@ -25,3 +25,14 @@ View all_orders обʼєднує дані з orders, customers, bouquets, order_
 
 
 Trigger trg_update_order_total (AFTER INSERT/UPDATE/DELETE на order_items) автоматично викликає відповідну функцію та рахує orders.total_amount.
+
+
+Users:
+
+flower_store_admin - full привілегії
+
+flower_store_analyst - read-only через all_orders view
+
+flower_store_manager - read-only on orders/order_items; вносити зміни в flowers, suppliers, flower_suppliers, bouquets
+
+flower_store_adflower_store_adminm
